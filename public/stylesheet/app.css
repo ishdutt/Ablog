@@ -1,0 +1,24 @@
+img{
+    width:400px;
+    height: 300px;
+}
+i.icon {
+    font-size: 2em;
+}
+
+#delete{
+    display: inline;
+}
+.footHeart{
+    width: 20px;
+    height: 20px
+}
+.footerit{
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}

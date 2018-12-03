@@ -1,0 +1,36 @@
+<% include ./partials/header %>
+   <div class="ui main text container" style="margin-top:7em">
+   	<div class="ui huge header">Animal's Blog</div>
+    <div class="ui top attached segment">
+<div class="ui divided items">
+	<% blogs.forEach(function(blog){ %>
+	 <div class="item">
+	    <div class="image">
+	      <img src="<%= blog.image %>">
+	    </div>
+	    <div class="content">
+	      <a class="header" href="/blog/<%=blog._id %>"><%= blog.title %></a>
+	      <div class="meta">
+	        <span class="cinema"><%= blog.created.toDateString() %></span>
+	      </div>
+	      <div class="description">
+	        <p><%- blog.body.substring(0,100); %>......</p>
+	      </div>
+	      <div class="extra">
+	        <a href="/blog/<%=blog._id %>" class="ui inverted basic violet button">
+	          Read More
+	          <i class="right chevron icon"></i>
+	        </a>
+	      </div>
+	    </div>
+	  </div>
+	<% }); %>
+</div>
+</div>
+    
+  </div>
+  
+  <div class="footerit" style="margin-top:80px;height:40px;background-color:black;color:white;text-allign:center">With <img class="footHeart" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/220px-Heart_coraz%C3%B3n.svg.png"> From Panda </div>
+<% include ./partials/footer %>
+
+ 
