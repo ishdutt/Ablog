@@ -1,4 +1,4 @@
-# Anima's Blogging Site
+# Animal's Blogging Site
 An <strong>animal's blog </strong>. It works on MEN stack using all the CRUD operations.The routes are RESTful. It's is user friendly and a layman who don't know about development too can use it. It is responsive and works on mobile devices too.<br>
 <h2>For Developers </h2>
 <Strong>How to use this project </strong><br>
